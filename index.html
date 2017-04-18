@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+		<title>Debate Team Chalmers</title>
+		<style>
+			.text-muted {
+				text-align:right;
+				font-style:italic;
+			}
+			.post {
+				text-align:left;
+			}
+			body {
+				background-image:url("img/cork-wallet.png");
+			}
+			.container {
+				background:#fff;
+				min-height:900px;
+			}
+		</style>
+		<script>
+			$(document).ready(function() {
+				$("a").on("click", function() {
+					$(".page").addClass("hidden");
+					$("#" + $(this).attr("data-id") + "-page").removeClass("hidden");
+					$(".nav").children().removeClass("disabled");
+					$(this).parent().addClass("disabled");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<section class="container text-center">
+			<section class="row">
+				<h1>Debate Team at Chalmers</h1>
+				<h5>Unoffical Debate Team for Chalmers University of Technology</h5>
+			</section>
+			<hr>
+			<section class="row">
+				<section class="col-md-10 col-md-offset-1">
+					<ul class="nav nav-pills nav-justified">
+					  <li role="presentation" class="disabled"><a href="#" data-id="home">Home</a></li>
+					  <li role="presentation"><a href="#" data-id="topics">Topics</a></li>
+					  <li role="presentation"><a href="#" data-id="contact">Contact</a></li>
+					</ul>
+				</section>
+			</section>
+			<br>
+			<section class="page" id="home-page">
+			<section class="row">
+				<section class="col-md-2 col-md-offset-1">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+						<h6>Next Meeting</h6>
+						<h4>2017-04-29</h4>
+					  </div>
+					</div>
+					<div class="panel panel-default">
+					  <div class="panel-body">
+						<h6>Next Debate</h6>
+						<h4>Not Announced</h4>
+					  </div>
+					</div>
+				</section>
+				<section class="col-md-8">
+					<div class="panel panel-default post">
+					  <div class="panel-body">
+						<h6>Update 2017-04-18</h6>
+						<h4>Welcome to the Website!</h4>
+						<p class="text-muted">by admin</p>
+					  </div>
+					</div>
+				</section>
+			</section>
+		</section>
+		<section class="page hidden" id="topics-page">
+			<section class="row">
+				<section class="col-md-10 col-md-offset-1">
+					<ul class="list-group">
+					  <li class="list-group-item">When is it appropriate for a group of people (organisation, nation, etc.) to separate from that body in the name of self preservation?</li>
+					  <li class="list-group-item">Capitalism VS Socialism; Technology makes human interaction weaker</li>
+					  <li class="list-group-item">Impact of Technology, 4th Industrial revolution etc</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+		<section class="page hidden" id="contact-page">
+			<section class="row">
+				<section class="col-md-12">
+					<h2>Peter Pickerill(admin)</h2>
+					<h5>Email : <a href="mailto:peterpickerill2016@gmail.com">PeterPickerill2016@gmail.com</a></h5>
+					<h2>Ian Maitland (admin)</h2>
+					<h5>Email : <a href="mailto:Ian.Maitlandx13@gmail.com">Ian.Maitlandx13@gmail.com</a></h5>
+					<h2>Gunnar Örn Gunnarsson (media)</h2>
+					<h5>Email : <a href="mailto:peterpickerill2016@gmail.com">PeterPickerill2016@gmail.com</a></h5>
+				</section>
+			</section>
+		</section>
+		</section>
+		
+	</body>
+</html>
